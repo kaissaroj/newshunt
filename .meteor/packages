@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+
+
+pcjpcj2:framework7
+iron:router
+linto:fontawesome
+accounts-base
+accounts-password
+#fuatsengul:leaflet
+jquery
+#mdg:camera
+mdg:geolocation
+dburles:google-maps
+# settinghead:auto-nprogress
+# joshowens:shareit
+wollardj:timeago

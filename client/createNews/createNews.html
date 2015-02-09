@@ -1,0 +1,37 @@
+<template name="createNews">
+    <div class="view navbar-fixed">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left"><a href="#" class="link close-popup">Cancel</a></div>
+                    <div class="center" style="left: -7px;">Add news</div>
+                    <div class="right"><a class="link orange close-popup" id="sendNews">Send</a></div>
+                </div>
+            </div>
+            <div class="page-content message-content">
+                <form id="my-form" class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <textarea placeholder="What's new around you?" id="description" style="border-radius: 5px; border-bottom: 1px solid #ccc; margin-bottom: 15px;"></textarea>
+                                        <input type="text" placeholder="Add tags" id="tag" style="border-bottom: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px; padding: 15px 0;">
+                                        <div style="margin: 10px 0 0 0; border-radius: 5px; border: 1px solid #ff9500; padding: 8px" id="clickgallery" >
+                                            <i class="fa fa-plus"> </i> Add Photo
+                                        </div>
+                                        <div style="display: none; margin: 10px 0 0 0; border-radius: 5px; border: 1px solid #ff9500; padding: 8px" id="removephoto" >
+                                            <i class="fa fa-trash"> </i> Remove Photo
+                                        </div>
+                                        <img src="" id="imageSelect" style="border:none; background:transparent; width: 100%;">
+                                        <input type="file" id="filInput" class="item-title hidden" accept="image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

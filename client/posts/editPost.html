@@ -1,0 +1,41 @@
+<template name="editPost">
+    <div class="popup popup-editPost">
+        <div class="view navbar-fixed">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="" class="link close-popup">Cancel</a></div>
+                        <div class="center" style="left">Edit News</div>
+                        <div class="right"><a class="link orange close-popup" id="editNews">Done</a></div>
+                    </div>
+                </div>
+                <div class="page-content message-content">
+
+                    <form id="my-form" class="list-block">
+                        <ul>
+
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <textarea placeholder="What's new with you." id="description"
+                                                      value="{{title}}"></textarea>
+                                            <input type="text" placeholder="tagline" id="tag" value="{{tagline}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</template>

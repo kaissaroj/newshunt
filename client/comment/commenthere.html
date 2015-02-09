@@ -1,0 +1,26 @@
+<template name="commenthere">
+    {{#each commentshere}}
+        {{#each comments}}
+            <li class="contact-item">
+                <a class="item-link">
+                    <div class="item-content">
+                        <div class="item-media"><img src="{{avatar}}" width="44"></div>
+                        <div class="item-inner">
+                            <div class="item-title">
+                                <div class="item-title">{{by}}</div>
+                            </div>
+                            <div class="item-subtitle">{{message}}</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+        <div class="toolbar messagebar">
+            <div class="toolbar-inner">
+                <textarea placeholder="Message" id="message"></textarea><a href="#" class="link"
+                                                                           id="sendComment">Send</a>
+            </div>
+        </div>
+    {{/each}}
+
+</template>

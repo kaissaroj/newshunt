@@ -1,0 +1,31 @@
+<template name="noti">
+
+
+    <div class="pages navbar-through">
+        <div data-page="setting" class="page page-on-center">
+            <div class="page-content">
+                <div class="setting-page list-block">
+                    <ul>
+                        {{#each notifications}}
+                            <li id="itemclick">
+                                <a href="" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media feedback spring"><img src="{{avatar}}"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">{{commentedBy}} commented on your post:
+                                                <div style="color: #111111">{{message}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</template>

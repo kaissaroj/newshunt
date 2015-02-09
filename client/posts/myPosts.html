@@ -1,0 +1,45 @@
+<template name="myPosts">
+    <div class="popup popup-myPosts">
+        <div class="page-content">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link close-popup">Close</a>
+                    </div>
+                    <div class="center">
+                        <a href="#" class="">My Posts</a>
+                    </div>
+                    <div class="right">
+                        <a href="#" class=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-page list-block">
+                <ul>
+                    {{#each myPosts}}
+                        <li class="swipeout">
+
+                            <div class="swipeout-content item-content">
+                                <div class="item-media feedback spring"></div>
+                                <div class="item-inner">
+                                    <div class="item-title">{{title}}</div>
+                                </div>
+
+                                <div class="swipeout-actions-left">
+                                    <a href="" class="" id="editPost">Edit</a>
+                                </div>
+                                <div class="swipeout-actions-right">
+                                    <a href="" class="action1" id="deletePost">Delete</a>
+                                </div>
+                            </div>
+
+                        </li>
+                    {{/each}}
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+</template>

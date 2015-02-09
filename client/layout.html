@@ -1,0 +1,157 @@
+<template name="layout">
+
+    <div class="statusbar-overlay"></div>
+    <div class="views tabs toolbar-through">
+        <div class="pages">
+            <div class="page">
+                <div class="page-content" style="background-color: #fffffc;">
+                    <!-- Tabs animated wrapper, required to switch tabs with transition -->
+                    <div class="tabs-animated-wrap">
+
+                        <!-- Tabs, tabs wrapper -->
+                        <div class="tabs" style="border: none">
+
+                            <!--Trending-->
+                            <div id="view-1" class="view view-main tab active">
+                                <div class="navbar" style="background-color: #ff9500; box-shadow: 0 4px 6px #CCCCCC; border: none;outline: none;">
+                                    <div class="navbar-inner" style="padding: 0; margin: 0">
+                                        <!-- Left part doesn't related to other pages, let's fade it out -->
+                                        <div class="left sliding" style="padding: 10px; color: #fCFCFC" id="searchNews">
+                                            <i class="fa fa-search" ></i>
+                                        </div>
+
+                                        <!-- Center and Right parts reflect page title and page links, let's slide them -->
+
+                                        <div class="center sliding" style="color:white">Trending</div>
+                                        <div class="right sliding " style="padding: 10px; color: #fCFCFF; background-color: #ff8000"  id="createNews" >
+                                            <i class="fa fa-plus"> </i> &nbsp; New
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {{>trendingNewsFeed}}
+                            </div>
+
+                            <!--Recent-->
+                            <div id="view-2" class="view tab">
+                                <div class="navbar" style="background-color: #ff9500; box-shadow: 0 4px 6px #CCCCCC; border: none;outline: none;">
+                                    <div class="navbar-inner" style="padding: 0; margin: 0">
+                                        <!-- Left part doesn't related to other pages, let's fade it out -->
+                                        <div class="left sliding" style="padding: 10px; color: #fCFCFC" id="searchNews">
+                                            <i class="fa fa-search" ></i>
+                                        </div>
+
+                                        <!-- Center and Right parts reflect page title and page links, let's slide them -->
+
+                                        <div class="center sliding" style="color:white">Recent</div>
+                                        <div class="right sliding " style="padding: 10px; color: #fCFCFF; background-color: #ff8000"  id="createNews" >
+                                            <i class="fa fa-plus"> </i> &nbsp; New
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {{>recentNewsFeed}}
+
+                            </div>
+
+                            <!--Notications-->
+                            <div id="view-3" class="view tab">
+                                <div class="navbar" style="background-color: #ff9500; box-shadow: 0 4px 6px #CCCCCC; border: none;outline: none;">
+                                    <div class="navbar-inner" style="padding: 0; margin: 0">
+                                        <!-- Left part doesn't related to other pages, let's fade it out -->
+                                        <div class="left sliding" style="padding: 10px;" >
+                                        </div>
+
+                                        <!-- Center and Right parts reflect page title and page links, let's slide them -->
+
+                                        <div class="center sliding" style="color:white">Notifications</div>
+                                        <div class="right sliding" style="color:white"></div>
+
+
+                                    </div>
+                                </div>
+                                {{>noti}}
+                            </div>
+                            <div id="view-4" class="view tab">
+                                <div class="navbar" style="background-color: #ff9500; box-shadow: 0 4px 6px #CCCCCC; border: none;outline: none;">
+                                    <div class="navbar-inner" style="padding: 0; margin: 0">
+                                        <!-- Left part doesn't related to other pages, let's fade it out -->
+                                        <div class="left sliding" style="padding: 10px; color: #fCFCFC" id="refreshNews">
+                                            <i class="fa fa-refresh" ></i>Refresh
+                                        </div>
+
+                                        <!-- Center and Right parts reflect page title and page links, let's slide them -->
+
+                                        <div class="center sliding" style="color:white">Map</div>
+                                        <div class="right sliding " style="padding: 10px; color: #fCFCFF; background-color: #ff8000"  id="createNews" >
+                                            <i class="fa fa-plus"> </i> &nbsp; New
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {{>showMap}}
+                            </div>
+                            <!--Profile-->
+                            <div id="view-5" class="view tab">
+                                <div class="navbar" style="background-color: #ff9500; box-shadow: 0 4px 6px #CCCCCC; border: none;outline: none;">
+                                    <div class="navbar-inner" style="padding: 0; margin: 0">
+                                        <!-- Left part doesn't related to other pages, let's fade it out -->
+                                        <div class="left sliding" style="padding: 10px;" >
+                                        </div>
+
+                                        <!-- Center and Right parts reflect page title and page links, let's slide them -->
+
+                                        <div class="center sliding" style="color:white">Profile</div>
+                                        <div class="right sliding" style="color:white"></div>
+
+
+                                    </div>
+                                </div>
+                                {{>profile}}
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="toolbar tabbar tabbar-labels" style="background-color: #d4d4d4;">
+            <div class="toolbar-inner">
+
+                <a href="#view-1" class="tab-link active">
+                    <i class="fa fa-bolt"></i>
+                    <span class="tabbar-label">Trending</span>
+                </a>
+                <a href="#view-2" class="tab-link">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="tabbar-label">Recent</span>
+                </a>
+
+                <a href="#view-3" class="tab-link">
+                    <i class="fa fa-flag-o">
+                    </i><span class="tabbar-label">Notification</span>
+                </a>
+                <a href="#view-4" class="tab-link">
+                    <i class="fa fa-map-marker"></i>
+                    <span class="tabbar-label">Map</span></a>
+
+                <a href="#view-5" class="tab-link">
+                    <i class="fa fa-user"></i>
+                    <span class="tabbar-label">Profile</span></a>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+
+        </script>
+
+    </div>
+    <!--create News-->
+    <div class="popup popup-createNews">
+        {{>createNews}}
+    </div>
+
+</template>

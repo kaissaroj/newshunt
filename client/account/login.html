@@ -1,0 +1,48 @@
+<template name="login">
+    <div class="view">
+        <div class="page" style="background-color: #CCCCCC; box-sizing: border-box">
+            <div class="page-content login-screen-content"
+                 style="background-color: white; box-shadow: 2px 2px 4px #CCC; margin: 5px; box-sizing: border-box;">
+                <h1 style="text-align: center;color: #666666">News Hunt</h1>
+                <form>
+                    <div class="list-block">
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-inner" style="border:none;">
+                                    <div class="item-input">
+                                        <input type="text" name="username" placeholder="Username" id="userName"
+                                               style="border-bottom: 1px solid #CCC; border-radius: 5px;">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content" style="margin-top: 15px;">
+                                <div class="item-inner" style="border:none;">
+                                    <div class="item-input">
+                                        <input type="password" name="password" placeholder="Password"
+                                               id="password" style="border-bottom: 1px solid #CCC; border-radius: 5px;">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="item-link list-button" id="loginError"
+                                   style="color:#ff2d55;visibility: hidden">
+                                    <i class="fa fa-warning"></i> Invalid details!
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-block">
+                        <ul>
+                            <li><a class="item-link list-button" id="signIn" style="color: #FFFFFF; background-color: #FF9500; margin: 0 5%; border-radius: 5px; ">Sign In</a></li>
+                            <li><a class="item-link list-button" id="register" style="color: #111111">Register</a></li>
+                        </ul>
+                        <div class="list-block-label">
+                            <p>Share N Get News</p>
+                            <!-- <p><a href="#" class="close-login-screen">Close Login Screen</a></p>-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

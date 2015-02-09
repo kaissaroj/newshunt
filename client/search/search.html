@@ -1,0 +1,78 @@
+<template name="search">
+    <div class="popup popup-searchNews">
+
+        <div id="" class="view view-main ">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <form class="searchbar" data-search-list=".list-block-search" data-search-in=".item-title"
+                          data-searchbar-found=".searchbar-found" data-searchbar-not-found=".searchbar-not-found">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="Search" id="searchtag">
+                        </div>
+                        <a href="" class="" id="searchIt">Search</a>
+                    </form>
+                    <div class="left"><a href="" class="link close-popup">Cancel</a></div>
+
+                </div>
+            </div>
+            <div class="content-block-title"></div>
+            <div class="page-content">
+                <div class="list-block media-list">
+                    <div class="load-result"></div>
+                    <ul class="time-line-content">
+                        {{#each searchResult}}
+                            <li class="item-content card-content" style="border-radius: 5px; margin: 12px 0;">
+                                <div class="item-inner">
+                                    <div class="item-header">
+                                        <div class="avatar">
+                                            <img src="{{avatar}}">
+                                        </div>
+                                        <div class="detail">
+                                            <p class="nickname" style="color:darkslategray"><strong>{{username}}</strong></p>
+
+                                            <p data-time="1404709434" class="create-time">{{>timeago date}}</p>
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <div class="click-content">
+                                        <div class="item-subtitle">
+                                            {{title}}
+                                            {{#if Image}}
+                                                <p class="buttons-row">
+
+                                                <p class="buttons-row theme-pink">
+                                                    <a href="" class="button pb-standalone-dark" id="viewImage"
+                                                       style="background: #5bc0de;border-color: #46b8da">View Image</a>
+                                                </p>
+                                                </p>
+                                            {{/if}}
+                                        </div>
+                                    </div>
+                                    <div class="item-tools">
+                                        <ul>
+                                            <li style="width: 30%" id="vote">
+                                                <i class="fa fa-thumbs-o-up"></i>
+                                                <span class="text">&nbsp;{{votes}} Votes</span>
+                                            </li>
+                                            <li style="width: 40%" id="comment">
+                                                <i class="fa fa-comment-o"></i>
+                                                <span class="text">&nbsp;{{commentsCount}} Comments</span>
+                                            </li>
+                                            <li style="width: 30%" id="share">
+                                                <i class="fa fa-share-square-o"></i><span class="text">Share</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        {{/each}}
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</template>

@@ -1,0 +1,55 @@
+<template name="profile">
+    <div class="pages navbar-through">
+        <div data-page="setting" class="page page-on-center">
+            <div class="page-content">
+                <div class="setting-page list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner user-info">
+                                    <div class="avatar">
+
+                                        <img src={{photo}} alt="" id="profileImage">
+
+                                    </div>
+                                    <div class="user-detail">
+                                        <div class="name">Name: {{username}}</div>
+
+                                    </div>
+                                </div>
+                                <input type="file" id="fileInput" class="item-title">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="item-link" id="myPosts">
+                                <div class="item-content">
+                                    <div class="item-media feedback spring"></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">My Posts</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="item-link" id="myPic">
+                                <div class="item-content">
+                                    <div class="item-media update spring"></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Change Profile Picture</div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                    <a href="" class="button button-big logout-button button-fill color-red" id="logout">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</template>
